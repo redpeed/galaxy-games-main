@@ -48,7 +48,7 @@ export const roadmapData = [
       paragraph: 'Multiplayer closed Alpha release, Economy integrations added to game',
     },
     {
-      heading: 'Q1/Q2 2024',
+      heading: 'Q1/Q2 2025',
       span: 'PHASE 10',
       paragraph: 'In-Game NTF release, tournaments activation',
     },
