@@ -12,34 +12,44 @@ function Footer() {
             <img src="/desktop/logo_v.png" className="w-40 mb-5" alt="" />
           </div>
           <div className="hidden md:block md:flex-[0.3]">
-            <ul className="flex flex-col items-start justify-center uppercase text-sm 2xl:text-lg space-y-2 text-slate-400">
-              <li>
-                <a href="#home" className="hover:text-gray-300">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#web3" className="hover:text-gray-300">
-                  Web 2 meets web 3
-                </a>
-              </li>
-              <li>
-                <a href="#games" className="hover:text-gray-300">
-                  Games
-                </a>
-              </li>
-              <li>
-                <a href="#token" className="hover:text-gray-300">
-                  Token
-                </a>
-              </li>
-              <li>
-                <a href="#roadmap" className="hover:text-gray-300">
-                  Roadmap
-                </a>
-              </li>
-            </ul>
-          </div>
+  <ul className="flex flex-col items-start justify-center uppercase text-sm 2xl:text-lg space-y-2 text-slate-400">
+    <li>
+      <a href="#home" className="hover:text-gray-300">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="#web3" className="hover:text-gray-300">
+        Web 2 meets web 3
+      </a>
+    </li>
+    <li>
+      <a href="#games" className="hover:text-gray-300">
+        Games
+      </a>
+    </li>
+    <li>
+      <a href="#token" className="hover:text-gray-300">
+        Token
+      </a>
+    </li>
+    <li>
+      <a href="#roadmap" className="hover:text-gray-300">
+        Roadmap
+      </a>
+    </li>
+    <li className="relative pb-6">
+      <div className="flex flex-col items-center">
+        <span className="line-through hover:text-gray-300 cursor-not-allowed">
+          STAKING PLATFORM
+        </span>
+        <span className="text-xs text-indigo-500 uppercase font-bold whitespace-nowrap -mt-1">
+          COMING SOON
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
           <div className="flex-[0.4] text-right">
             <div className="hidden md:flex items-center justify-center md:justify-end gap-5 mb-8">
               <a
@@ -119,7 +129,7 @@ function Footer() {
           </div>
         </div>
         <div className="border-t text-slate-400 tracking-[2.7px] border-white pt-3 pb-2 flex flex-col sm:flex-row items-center justify-between text-xs 2xl:text-base">
-          <p>© 2024 GALAXY GAMES. All Rights Reserved.</p>
+          <p>© 2024 GALAXY GAMES FZCO. All Rights Reserved.</p>
           <p>PRIVACY POLICY - TERMS & CONDITIONS</p>
         </div>
       </div>
