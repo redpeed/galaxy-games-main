@@ -2,6 +2,8 @@ import React from 'react';
 import { FaDiscord, FaSteam } from 'react-icons/fa';
 import { FaTelegram, FaXTwitter } from 'react-icons/fa6';
 import { SiOpensea } from 'react-icons/si';
+import { Link } from 'react-router-dom';
+
 
 function Footer() {
   return (
@@ -129,9 +131,15 @@ function Footer() {
           </div>
         </div>
         <div className="border-t text-slate-400 tracking-[2.7px] border-white pt-3 pb-2 flex flex-col sm:flex-row items-center justify-between text-xs 2xl:text-base">
-          <p>© 2024 GALAXY GAMES FZCO. All Rights Reserved.</p>
-          <p>PRIVACY POLICY - TERMS & CONDITIONS</p>
-        </div>
+  <p>© 2024 GALAXY GAMES FZCO. All Rights Reserved.</p>
+  <p>
+    PRIVACY POLICY - 
+    <Link to="/terms" className="underline">
+      TERMS & CONDITIONS
+    </Link>
+  </p>
+</div>
+
       </div>
     </div>
   );
