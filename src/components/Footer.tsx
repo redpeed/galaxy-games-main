@@ -16,27 +16,27 @@ function Footer() {
           <div className="hidden md:block md:flex-[0.3]">
   <ul className="flex flex-col items-start justify-center uppercase text-sm 2xl:text-lg space-y-2 text-slate-400">
     <li>
-      <a href="#home" className="hover:text-gray-300">
+      <a href="/#home" className="hover:text-gray-300">
         Home
       </a>
     </li>
     <li>
-      <a href="#web3" className="hover:text-gray-300">
+      <a href="/#web3" className="hover:text-gray-300">
         Web 2 meets web 3
       </a>
     </li>
     <li>
-      <a href="#games" className="hover:text-gray-300">
+      <a href="/#games" className="hover:text-gray-300">
         Games
       </a>
     </li>
     <li>
-      <a href="#token" className="hover:text-gray-300">
+      <a href="/#token" className="hover:text-gray-300">
         Token
       </a>
     </li>
     <li>
-      <a href="#roadmap" className="hover:text-gray-300">
+      <a href="/#roadmap" className="hover:text-gray-300">
         Roadmap
       </a>
     </li>

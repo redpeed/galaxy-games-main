@@ -36,23 +36,7 @@ function Home() {
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
-    window.location.hash = '#home';
-    if (toggle) {
-      // Disable Y-axis scroll on both body and html
-      document.body.style.overflowY = 'hidden';
-      document.documentElement.style.overflowY = 'hidden'; // Prevent scroll on the html element too
-    } else {
-      // Enable scroll again on both body and html
-      document.body.style.overflowY = 'auto';
-      document.documentElement.style.overflowY = 'auto';
-    }
-
-    // Clean-up to remove styles when component unmounts
-    return () => {
-      document.body.style.overflowY = 'auto';
-      document.documentElement.style.overflowY = 'auto';
-    };
-  }, [toggle]);
+   }, [toggle]);
 
   return (
     <div

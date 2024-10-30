@@ -12,6 +12,7 @@ import Roadmap from './components/Roadmap';
 import Tokens from './components/Tokens';
 import Web3 from './components/Web3';
 import TermsAndConditions from './components/TermsAndConditions'; // Import your new component
+import ScrollToTop from './ScrollToTop';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,6 +28,7 @@ function App() {
     <>
       {/* Common components like Header can be added here if you have one */}
       <Navbar /> {/* Nav bar will appear on all pages */}
+      <ScrollToTop />
       
       {/* Define routes */}
       <Routes>
