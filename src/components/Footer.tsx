@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaDiscord, FaSteam } from 'react-icons/fa';
 import { FaTelegram, FaXTwitter } from 'react-icons/fa6';
 import { SiOpensea } from 'react-icons/si';
@@ -6,6 +6,51 @@ import { Link } from 'react-router-dom';
 
 
 function Footer() {
+
+  const [email, setEmail] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [lastSubmittedTime, setLastSubmittedTime] = useState(0);
+
+  // Add your event handlers here
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+  
+    const now = Date.now();
+    if (now - lastSubmittedTime < 5000) {
+      alert('Please wait 5 seconds before submitting again.');
+      return;
+    }
+    setLastSubmittedTime(now);
+  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRL4gTqBNZFbLhuX8iyFoX_Hn945km4dhiiclurGuIckoAK15wtwUW12e_-VpCEx9R/exec';
+  
+    fetch(scriptURL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: email }),
+    })
+      .then(() => {
+        setIsSubmitted(true);
+        setEmail('');
+  
+        // Optionally reset the button after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      })
+      .catch((err) => {
+        console.error('Error:', err);
+        alert('There was an error submitting your email.');
+      });
+  };
+
   return (
     <div className="bg-primary text-slate-200 pt-10 pb-3 px-2">
       <div data-aos="zoom-in" className="max-w-5xl  mx-auto">
@@ -51,7 +96,7 @@ function Footer() {
       </div>
     </li>
     <li className="relative pb-0">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-left">
         <span className="line-through hover:text-gray-300 cursor-not-allowed">
           STAKING PLATFORM
         </span>
@@ -97,16 +142,33 @@ function Footer() {
               <p>STAY UP TO DATE</p>
               <p>SUBSCRIBE TO OUR NEWSLETTER</p>
             </div>
+            
             <div className="w-80 md:ml-auto">
-              <div className="flex items-center justify-center  md:justify-end">
-                <input
-                  placeholder="email address"
-                  className="pl-4 py-2 w-[70%] border text-sm focus:outline-none border-[#015cba] rounded-l-full bg-primary text-slate-400 placeholder-slate-300"
-                />
-                <button className="bg-gradient-to-b w-[30%]  from-purple-600 to-indigo-600 text-white uppercase text-sm py-2 px-4 rounded-r-full hover:bg-gradient-to-t hover:to-purple-800 hover:from-indigo-800 duration-300 border border-purple-600">
-                  SIGN UP
-                </button>
-              </div>
+            <form onSubmit={handleFormSubmit}>
+  <div className="flex items-center justify-center md:justify-end">
+    <input
+      type="email"
+      placeholder="E-mail address"
+      value={email}
+      onChange={handleInputChange}
+      required
+      className="pl-4 py-2 w-[70%] border text-sm focus:outline-none border-[#015cba] rounded-l-full bg-primary text-slate-400 placeholder-slate-300"
+    />
+<button
+  type="submit"
+  disabled={isSubmitted}
+  className={`h-10 ${
+    isSubmitted ? 'w-[60%]' : 'w-[30%]'
+  } text-white uppercase text-sm py-2 px-4 rounded-r-full duration-200 border ${
+    isSubmitted
+      ? 'bg-green-500 border-green-600 cursor-not-allowed'
+      : 'bg-gradient-to-b from-purple-600 to-indigo-600 hover:bg-gradient-to-t hover:to-purple-800 hover:from-indigo-800 border-purple-600'
+  }`}
+>
+  {isSubmitted ? 'Email submitted!' : 'SIGN UP'}
+</button>
+  </div>
+</form>
             </div>
             <div className="flex md:hidden items-center justify-center md:justify-end gap-5 mt-8">
               <a
@@ -163,5 +225,6 @@ function Footer() {
     </div>
   );
 }
+
 
 export default Footer;
