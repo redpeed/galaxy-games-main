@@ -19,10 +19,17 @@ body {
   @apply bg-gradient-to-b tracking-[2.2px] from-[#510bbc] to-[#210fb4] text-white uppercase text-sm py-2 rounded-full hover:bg-gradient-to-t hover:to-purple-800 hover:from-indigo-800 duration-300 before:ease-out relative overflow-hidden transition-all 2xl:py-2 2xl:text-lg;
 }
 
+/* Custom styles for navbar items */
+.navbar-item {
+  position: relative; /* To position the pseudo-element correctly */
+  padding-left: 1.75rem; /* Equivalent to Tailwind's px-7 */
+  padding-right: 1.75rem;
+}
+
 .nav-item::after {
   content: '';
   position: absolute;
-  bottom: -10px; /* Adjust to position below the text */
+  bottom: -15px; /* Adjust to position below the text */
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
@@ -31,6 +38,26 @@ body {
   border-radius: 50%;
   opacity: 0;
   animation: shine 2s infinite ease-in-out;
+}
+
+/* Styles for the lens flare image to appear on hover */
+.navbar-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + -12px); /* Positions the image below the link */
+  width: 176px; /* Adjust to match your image size */
+  height: 48px; /* Adjust to match your image size */
+  background-image: url('/desktop/Lens_Flare_purple_PNG.png'); /* Ensure the path is correct */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+.navbar-item:hover::after {
+  opacity: 1; /* Shows the image on hover */
 }
 
 .nav-item.active::after {
@@ -291,3 +318,6 @@ body {
     rgba(0, 0, 0, 0)
   );
 }
+
+
+

@@ -90,7 +90,7 @@ function Navbar() {
 
           <ul className="hidden lg:flex uppercase tracking-[2.7px]">
             {navLinks.map((link) => (
-              <li key={link.id} className="relative px-7">
+              <li key={link.id} className="navbar-item">
                 <a
                   href={link.href}
                   className={`${
