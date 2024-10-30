@@ -45,7 +45,7 @@ function Footer() {
         <span className="line-through hover:text-gray-300 cursor-not-allowed">
           STAKING PLATFORM
         </span>
-        <span className="text-xs text-indigo-500 uppercase font-bold whitespace-nowrap -mt-1">
+        <span className="text-xs text-violet-500 uppercase font-bold whitespace-nowrap -mt-1">
           COMING SOON
         </span>
       </div>
@@ -133,10 +133,19 @@ function Footer() {
         <div className="border-t border-slate-700 text-slate-400 tracking-[2.7px] pt-3 pb-2 flex flex-col sm:flex-row items-center justify-between text-xs 2xl:text-base">
   <p>© 2024 GALAXY GAMES FZCO. All Rights Reserved.</p>
   <p>
-    PRIVACY POLICY - 
-    <Link to="/terms" className="underline">
-      TERMS & CONDITIONS
-    </Link>
+  <Link 
+        to="/privacypolicy" 
+        className="text-white-500 hover:text-violet-700 transition-colors duration-200 ml-2"
+      >
+        PRIVACY POLICY
+      </Link>
+      - 
+    <Link 
+        to="/termsandconditions" 
+        className="text-white-500 hover:text-violet-700 transition-colors duration-200 ml-2"
+      >
+        TERMS & CONDITIONS
+      </Link>
   </p>
 </div>
 
