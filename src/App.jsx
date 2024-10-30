@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'; 
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import GalaxyGames from './components/GalaxyGames';
 import Games from './components/Games';
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       {/* Common components like Header can be added here if you have one */}
+      <Navbar /> {/* Nav bar will appear on all pages */}
       
       {/* Define routes */}
       <Routes>
@@ -40,7 +42,7 @@ function App() {
               <Roadmap />
               <Partners />
               <GalaxyGames />
-              <Footer />
+            
             </>
           }
         />
@@ -48,6 +50,7 @@ function App() {
         {/* Terms and Conditions Route */}
         <Route path="/terms" element={<TermsAndConditions />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -130,7 +130,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t text-slate-400 tracking-[2.7px] border-white pt-3 pb-2 flex flex-col sm:flex-row items-center justify-between text-xs 2xl:text-base">
+        <div className="border-t border-slate-700 text-slate-400 tracking-[2.7px] pt-3 pb-2 flex flex-col sm:flex-row items-center justify-between text-xs 2xl:text-base">
   <p>© 2024 GALAXY GAMES FZCO. All Rights Reserved.</p>
   <p>
     PRIVACY POLICY - 
