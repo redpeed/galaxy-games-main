@@ -40,7 +40,17 @@ function Footer() {
         Roadmap
       </a>
     </li>
-    <li className="relative pb-6">
+    <li className="relative pb-0">
+      <div className="flex flex-col items-center">
+        <span className="line-through hover:text-gray-300 cursor-not-allowed">
+          WHITEPAPER
+        </span>
+        <span className="text-xs text-violet-500 uppercase font-bold whitespace-nowrap -mt-1">
+          COMING SOON
+        </span>
+      </div>
+    </li>
+    <li className="relative pb-0">
       <div className="flex flex-col items-center">
         <span className="line-through hover:text-gray-300 cursor-not-allowed">
           STAKING PLATFORM
@@ -137,9 +147,9 @@ function Footer() {
         to="/privacypolicy" 
         className="text-white-500 hover:text-violet-700 transition-colors duration-200 ml-2"
       >
-        PRIVACY POLICY
+        PRIVACY POLICY  
       </Link>
-      - 
+    {' '} -
     <Link 
         to="/termsandconditions" 
         className="text-white-500 hover:text-violet-700 transition-colors duration-200 ml-2"
