@@ -37,44 +37,87 @@ function Navbar() {
   return (
     <>
       {/* Mobile Nav */}
-      <nav
-        className={`${
-          toggle ? 'w-52 opacity-100' : 'w-0 opacity-70'
-        } absolute top-0 right-0 bottom-0 z-30 transition-all duration-300 bg-primary overflow-hidden`}
-      >
-        <ul className="flex flex-col items-start justify-center uppercase text-base space-y-2 text-slate-300 p-5 pt-14">
-          {navLinks.map((val) => (
-            <li key={val.id} onClick={() => setToggle(false)}>
-              <a href={val.href} className="hover:text-slate-100 text-xl">
-                {val.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <nav className="flex lg:hidden absolute top-0 left-0 right-0  justify-between items-center px-3 py-3 text-white bg-slate-900">
-        <img src="/mobile/ggg_v.png" alt="" className="w-10 h-10 object-cover" />
-        <img src="/desktop/logo_v.png" alt="" className="md:w-32 w-24" />
-        <div
-          onClick={() => setToggle((prev) => !prev)}
-          className=" flex h-10 w-10 cursor-pointer items-center justify-center p-2 relative z-[999]"
-        >
-          <div className="space-y-2 ">
-            <span
-              className={`${
-                toggle ? 'translate-y-1.5 rotate-45 h-[3px]' : 'h-[2px]'
-              } block  w-8 origin-center rounded-full bg-white transition-transform ease-in-out `}
-            ></span>
-            <span
-              className={`${
-                toggle
-                  ? 'w-8 -translate-y-1.5 -rotate-45 h-[3px]'
-                  : 'w-6 h-[2px]'
-              } block   ml-auto origin-center rounded-full bg-white transition-transform ease-in-out`}
-            ></span>
-          </div>
-        </div>
-      </nav>
+{/* Mobile Navbar */}
+<nav 
+className="flex lg:hidden fixed top-0 left-0 right-0 justify-between items-center px-4 py-3 text-white z-20"
+style={{ backgroundColor: '#01001e' }}>
+  <div className="flex items-center">
+    <img src={logoOne} alt="Logo" className="w-10 h-10" />
+    {/* If you want to include the second logo */}
+    {/* <img src={logoTwo} alt="Logo Two" className="w-20 ml-2" /> */}
+  </div>
+
+<div
+  onClick={() => setToggle((prev) => !prev)}
+  className="flex h-10 w-10 cursor-pointer items-center justify-center relative z-20"
+>
+  {/* Hamburger Icon */}
+  <div className="space-y-1">
+    <span
+      className={`block w-8 bg-white transition-transform duration-300 ${
+        toggle ? 'transform rotate-45 translate-y-2' : ''
+      }`}
+      style={{ height: '2px' }}
+    ></span>
+    <span
+      className={`block w-8 bg-white transition-opacity duration-300 ${
+        toggle ? 'opacity-0' : ''
+      }`}
+      style={{ height: '2px' }}
+    ></span>
+    <span
+      className={`block w-8 bg-white transition-transform duration-300 ${
+        toggle ? 'transform -rotate-45 -translate-y-2' : ''
+      }`}
+      style={{ height: '2px' }}
+    ></span>
+  </div>
+</div>
+</nav>
+
+{/* Overlay */}
+{toggle && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-50 z-10"
+    onClick={() => setToggle(false)}
+  ></div>
+)}
+
+{/* Mobile Navigation Menu */}
+<div
+  className={`fixed top-0 left-0 h-full w-full bg-primary z-20 transform ${
+    toggle ? 'translate-y-0' : 'translate-x-full'
+  } transition-transform duration-300 flex flex-col`}
+>
+  {/* Close Button */}
+  <div className="flex justify-end p-4">
+    <button
+      onClick={() => setToggle(false)}
+      className="text-white text-3xl focus:outline-none"
+    >
+      &times;
+    </button>
+  </div>
+
+  {/* Logo at the Top Center */}
+  <div className="flex justify-center">
+    <img src={logoOne} alt="Logo" className="w-20 h-20" />
+  </div>
+
+  {/* Menu Items */}
+  <div className="flex-grow flex items-center justify-center">
+    <ul className="flex flex-col items-center uppercase text-base space-y-6 text-slate-300 p-6 pt-0">
+      {navLinks.map((val) => (
+        <li key={val.id} onClick={() => setToggle(false)}>
+          <a href={val.href} className="hover:text-slate-100 text-4xl">
+            {val.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+      
 
       {/* Desktop Nav */}
       <nav
