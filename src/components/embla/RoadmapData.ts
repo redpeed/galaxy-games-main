@@ -2,7 +2,7 @@ export const roadmapData = [
   {
     heading: '2018',
     span: 'PHASE 1',
-    paragraph: 'IGF is founded, (now called Galaxy Games)',
+    paragraph: 'Our first IP was created',
   },
   {
     heading: '2019/2022',
