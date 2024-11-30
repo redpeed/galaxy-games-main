@@ -190,9 +190,9 @@ function Tokens() {
         <div data-aos="fade-up" className="text-center py-10 relative z-10">
           <a
             className="btn-primary px-12"
-            href=""
+            href="https://galaxy-games-studio.gitbook.io/whitepaper/usdgaga"
           >
-            TBA
+            LEARN MORE
           </a>
         </div>
       </div>
