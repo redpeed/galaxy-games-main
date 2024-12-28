@@ -87,11 +87,11 @@ function Games() {
               <p className="text-xs 2xl:text-base mb-7 text-slate-400">
                 *Genesis Pass NFT required
               </p>
-              <div className="flex items-center justify-center md:justify-start gap-5 text-white">
+              {/* <div className="flex items-center justify-center md:justify-start gap-5 text-white">
                 <FaPlaystation size={25} />
                 <FaXbox size={25} />
                 <FaSteam size={25} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -133,9 +133,9 @@ function Games() {
               <button className="btn-primary px-8 mb-7 2xl:w-52 tracking-widest">
                 Coming Soon
               </button>
-              <div className="text-white">
+              {/* <div className="text-white">
                 <SiEpicgames size={25} className="mx-auto md:mx-0" />
-              </div>
+              </div> */}
             </div>
             <div data-aos="fade-left" className='2xl:w-[45%]'>
               <img

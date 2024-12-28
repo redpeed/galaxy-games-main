@@ -86,14 +86,15 @@ function Footer() {
       </a>
     </li>
     <li className="relative pb-0">
-      <div className="flex flex-col items-center">
-        <span className="line-through hover:text-gray-300 cursor-not-allowed">
-          WHITEPAPER
-        </span>
-        <span className="text-xs text-violet-500 uppercase font-bold whitespace-nowrap -mt-1">
-          COMING SOON
-        </span>
-      </div>
+    <div className="flex flex-col items-center">
+  <a
+    href="https://galaxy-games-studio.gitbook.io/whitepaper"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    WHITEPAPER
+  </a>
+</div>
     </li>
     <li className="relative pb-0">
       <div className="flex flex-col items-left">

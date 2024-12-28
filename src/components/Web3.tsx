@@ -3,7 +3,10 @@ import { FaPlaystation, FaSteam, FaXbox } from 'react-icons/fa';
 import { FaDiamond, FaTelegram } from 'react-icons/fa6';
 import { SiEpicgames } from 'react-icons/si';
 
+
+
 function Web3() {
+    return null;
   return (
     <div
       id="web3"
