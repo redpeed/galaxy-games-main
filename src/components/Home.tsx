@@ -47,7 +47,7 @@ function Home() {
         <a
           data-aos="fade-up"
           data-aos-delay="850"
-          href="#web3"
+          href="#games"
           className="mt-4 btn-primary px-10 2xl:mt-8  "
         >
           Learn More
