@@ -34,18 +34,18 @@ export const roadmapData = [
   {
     heading: 'Q4 2024',
     span: 'PHASE 7',
-    paragraph: 'TGE, Staking platform release',
+    paragraph: 'Haunted Space Multiplayer closed alpha test',
   },
   {
-    heading: '2024',
+    heading: 'Q1 2025',
     span: 'PHASE 8',
-    paragraph: 'Haunted Space Multiplayer Internal alpha test',
+    paragraph: 'TGE, Staking platform release',
   },
     // FUTURE 
     {
-      heading: 'Q4/Q1 2025',
+      heading: 'Q1 2025',
       span: 'PHASE 9',
-      paragraph: 'Multiplayer closed Alpha release, Economy integrations added to game',
+      paragraph: 'Multiplayer public Alpha release, Economy integrations added to game',
     },
     {
       heading: 'Q1/Q2 2025',
