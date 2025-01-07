@@ -154,10 +154,10 @@ function Navbar() {
         </div>
 
         <a
-          href="https://t.me/HauntedSpaceMinigamebot/app?startapp=home"
+          href="https://galaxy-games-studio.gitbook.io/whitepaper"
           className="btn-primary px-7"
         >
-          Play Now
+          Whitepaper
         </a>
       </nav>
     </>
