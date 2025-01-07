@@ -30,7 +30,7 @@ function Tokens() {
           data-aos="fade-up"
         >
           <img
-            src="/desktop/TOKEN_v2_PNG.png"
+            src="/desktop/TOKEN_v3_PNG.png"
             alt=""
             className="w-32 md:hidden inline-block mb-10 md:mb-0 "
           />
@@ -109,7 +109,7 @@ function Tokens() {
             </div>
             <div className="relative">
               <img
-                src="/desktop/TOKEN_v2_PNG.png"
+                src="/desktop/TOKEN_v3_PNG.png"
                 alt=""
                 className="w-32 hidden md:inline-block rounded-full image-container"
               />
@@ -188,10 +188,12 @@ function Tokens() {
           </div>
         </div>
         <div data-aos="fade-up" className="text-center py-10 relative z-10">
-          <a
-            className="btn-primary px-12"
-            href="https://galaxy-games-studio.gitbook.io/whitepaper/usdgaga"
-          >
+        <a
+          className="btn-primary px-12"
+          href="https://galaxy-games-studio.gitbook.io/whitepaper/usdgaga"
+          target="_blank"
+          rel="noopener noreferrer"
+            >
             LEARN MORE
           </a>
         </div>

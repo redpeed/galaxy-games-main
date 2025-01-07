@@ -130,7 +130,10 @@ function Games() {
                 Join the army of raiders, fight against other player, earn real
                 money
               </p>
-              <button className="btn-primary px-8 mb-7 2xl:w-52 tracking-widest">
+              <button
+                className="btn-primary px-8 mb-7 2xl:w-52 tracking-widest"
+                onClick={() => window.open('https://store.epicgames.com/en-US/p/haunted-space-5525ee', '_blank')}
+              >
                 Coming Soon
               </button>
               {/* <div className="text-white">

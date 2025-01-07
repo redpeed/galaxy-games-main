@@ -71,21 +71,26 @@ function GalaxyGames() {
               loop
               muted
               playsInline
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             >
               <source src="/desktop/mid.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute inset-0 bg-gradient-to-b  from-[#4868a5]/30 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-b  from-[#4868a5]/30 to-transparent pointer-events-none"></div>
             <div className="relative z-10 text-center">
               <div>
                 <img src="/desktop/hero logo-04.png" alt="" />
               </div>
               <h2 className="text-[#4e7dd3] font-semibold">SURVIVAL</h2>
             </div>
-            <button className="btn-primary w-full relative z-10">
-              COMING SOON
-            </button>
+            <a
+            className="btn-primary w-full relative z-10 text-center"
+            href="https://store.epicgames.com/en-US/p/haunted-space-5525ee"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            COMING SOON
+          </a>
           </div>
           <div
             data-aos="fade-up"
