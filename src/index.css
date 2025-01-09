@@ -54,6 +54,7 @@ body {
   background-repeat: no-repeat;
   opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+  pointer-events: none;
 }
 
 .navbar-item:hover::after {
@@ -319,5 +320,29 @@ body {
   );
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 4s ease-in-out infinite;
+}
 

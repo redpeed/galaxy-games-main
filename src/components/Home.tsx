@@ -1,14 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import logoOne from '../../public/desktop/logo-one.svg';
-import logoTwo from '../../public/desktop/logo-two.svg';
+import AnimatedImage from "./AnimatedImage";
 
 function Home() {
-  const { hash } = useLocation();
-  const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-   }, [toggle]);
 
   return (
     <div
@@ -23,27 +15,19 @@ function Home() {
         loop
         playsInline
       >
-        <source src="/desktop/homepage.webm" type="video/webm" />
+        <source src="https://cdn.hauntedspace.io/galaxy-games/homepage.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
-      {/* <div
-    className="group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-white p-2 hover:bg-slate-200">
-    <div className="space-y-2">
-        <span className="block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45"></span>
-        <span className="block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45"></span>
-    </div>
-</div> */}
 
 
       <div className="relative z-10 flex flex-col pt-20 justify-center items-center h-full text-center text-white">
-        <div data-aos="fade-up" data-aos-delay="600">
-          <img
-            src="/desktop/logo_v.png"
-            className="w-[18rem] 2xl:w-[30rem]"
-            alt=""
-          />
-        </div>
+        <AnimatedImage
+          src="/desktop/logo_v.png"
+          alt="Logo"
+          className="w-[18rem] 2xl:w-[30rem]"
+          delay={600}
+        />
         <a
           data-aos="fade-up"
           data-aos-delay="850"
