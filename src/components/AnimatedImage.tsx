@@ -38,7 +38,7 @@ const AnimatedImage: React.FC<AnimatedImageProps> = ({ src, alt, className = '',
   return (
     <div 
       ref={imgRef}
-      className={`transition duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      className={`transition duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-1 translate-y-10'}`}
     >
       <img
         src={src}
