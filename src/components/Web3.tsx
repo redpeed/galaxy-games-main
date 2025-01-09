@@ -23,7 +23,7 @@ function Web3() {
         >
           <img
             className="w-40 h-16 bg-cover mb-10"
-            src="/desktop/Lens_Flare_purple_PNG.png"
+            src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
             alt=""
           />
           <h1 className="text-4xl uppercase text-white -mt-14">Web 2 meets web 3</h1>

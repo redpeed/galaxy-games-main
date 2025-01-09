@@ -19,7 +19,7 @@ function Games() {
           >
             <img
               className="w-32 h-12 md:w-40 md:h-16  rotate-90 -ml-16 sm:ml-0"
-              src="/desktop/Lens_Flare_purple_PNG.png"
+              src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
               alt=""
             />
             <div className="-ml-8 md:-ml-10">
@@ -116,7 +116,7 @@ function Games() {
             </div>
             <img
               className="w-32 h-12 md:w-40 md:h-16  rotate-90 -mr-[70px] md:mr-0 md:-ml-20 sm:ml-0"
-              src="/desktop/Lens_Flare_purple_PNG.png"
+              src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
               alt=""
             />
           </div>
@@ -139,7 +139,7 @@ function Games() {
             <div data-aos="fade-left" className='2xl:w-[45%]'>
               <img
                 className="rounded-xl overflow-hidden mb-2 md:mb-0 w-full"
-                src="/desktop/screen_Video_MultiPlayer.PNG"
+                src="https://cdn.hauntedspace.io/galaxy-games/screen_Video_MultiPlayer.webp"
                 alt=""
               />
             </div>
@@ -159,7 +159,7 @@ function Games() {
           >
             <img
               className="w-32 h-12 md:w-40 md:h-16 rotate-90 -ml-16 sm:ml-0"
-              src="/desktop/Lens_Flare_purple_PNG.png"
+              src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
               alt=""
             />
             <div className="-ml-10">
