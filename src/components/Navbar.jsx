@@ -142,7 +142,7 @@ function Navbar() {
                 {hash === link.href && (
                   <img
                     className="w-44 h-12 bg-cover mb-10 absolute left-0 top-5 2xl:top-6"
-                    src="/desktop/Lens_Flare_purple_PNG.png"
+                    src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
                     alt=""
                   />
                 )}

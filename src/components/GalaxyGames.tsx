@@ -13,7 +13,7 @@ function GalaxyGames() {
         <div data-aos="fade-up">
           <img
             className="w-40 h-16 bg-cover mb-10 mx-auto"
-            src="/desktop/Lens_Flare_purple_PNG.png"
+            src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
             alt=""
           />
           <div>
