@@ -1,10 +1,8 @@
-// src/components/Navbar.jsx
-
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 // Import images and other resources as needed
-import logoOne from '../../public/desktop/logo-one.svg';
-import logoTwo from '../../public/desktop/logo-two.svg';
+import logoOne from '../assets/img/logo-one.svg';
+import logoTwo from '../assets/img/logo-two.svg';
 
 const navLinks = [
   { id: 1, title: 'Home', href: '/#home' },
@@ -125,10 +123,10 @@ function Navbar() {
         className="hidden absolute top-0 left-0 right-0 lg:flex justify-between items-center px-6 py-3 text-white z-20 bg-slate-900"
       >
         <div className="flex items-center space-x-4 gap-3">
-          <div className="flex items-center justify-center gap-6">
+          <a href={"/"} className="flex items-center justify-center gap-6">
             <img src={logoOne} alt="" className="w-7" />
             <img src={logoTwo} alt="" className="w-20" />
-          </div>
+          </a>
 
           <ul className="hidden lg:flex uppercase tracking-[2.7px]">
             {navLinks.map((link) => (

@@ -15,6 +15,7 @@ import ScrollToTop from './ScrollToTop';
 
 const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
 const TermsAndConditions = lazy(() => import('./components/TermsAndConditions'));
+const NotFound = lazy(() => import('./components/NotFound'));
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -55,6 +56,7 @@ function App() {
           {/* Terms and Conditions Route */}
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />

@@ -27,7 +27,7 @@ function Home() {
 
 
       <div className="relative z-10 flex flex-col pt-20 justify-center items-center h-full text-center text-white">
-        <div data-aos="fade-up" data-aos-delay="600">
+        <div data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
           <img
             src="/desktop/logo_v.png"
             className="w-[18rem] 2xl:w-[30rem]"
