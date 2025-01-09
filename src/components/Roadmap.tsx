@@ -17,7 +17,7 @@ function Roadmap() {
       >
         <img
           className="w-40 h-16 md:w-48 md:h-20 bg-cover -mt-6 md:mt-0 md:mb-10"
-          src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+          src="/desktop/Lens_Flare_purple_PNG.png"
           alt=""
         />
         <h1 className="text-4xl uppercase tracking-wide -mt-3 md:-mt-14 mb-3 md:mb-16">

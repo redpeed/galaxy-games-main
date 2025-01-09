@@ -1,6 +1,6 @@
 // src/App.jsx
 
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -11,11 +11,9 @@ import Partners from './components/Partners';
 import Roadmap from './components/Roadmap';
 import Tokens from './components/Tokens';
 import Web3 from './components/Web3';
+import TermsAndConditions from './components/TermsAndConditions'; // Import your new component
 import ScrollToTop from './ScrollToTop';
-
-const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
-const TermsAndConditions = lazy(() => import('./components/TermsAndConditions'));
-const NotFound = lazy(() => import('./components/NotFound'));
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -32,33 +30,30 @@ function App() {
       {/* Common components like Header can be added here if you have one */}
       <Navbar /> {/* Nav bar will appear on all pages */}
       <ScrollToTop />
-
-      <Suspense fallback={<span>Loading...</span>}>
-        {/* Define routes */}
-        <Routes>
-          {/* Home Route */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Home />
-                <Web3 />
-                <Games />
-                <Tokens />
-                <Roadmap />
-                <Partners />
-                <GalaxyGames />
-
-              </>
-            }
-          />
-
-          {/* Terms and Conditions Route */}
-          <Route path="/termsandconditions" element={<TermsAndConditions />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+      
+      {/* Define routes */}
+      <Routes>
+        {/* Home Route */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Web3 />
+              <Games />
+              <Tokens />
+              <Roadmap />
+              <Partners />
+              <GalaxyGames />
+            
+            </>
+          }
+        />
+        
+        {/* Terms and Conditions Route */}
+        <Route path="/termsandconditions" element={<TermsAndConditions />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      </Routes>
       <Footer />
     </>
   );

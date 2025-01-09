@@ -1,7 +1,7 @@
 import React from 'react';
+import { FaPlaystation, FaSteam, FaXbox } from 'react-icons/fa';
 import { FaTelegram } from 'react-icons/fa6';
-import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+import { SiEpicgames } from 'react-icons/si';
 
 function Games() {
   return (
@@ -19,7 +19,7 @@ function Games() {
           >
             <img
               className="w-32 h-12 md:w-40 md:h-16  rotate-90 -ml-16 sm:ml-0"
-              src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+              src="/desktop/Lens_Flare_purple_PNG.png"
               alt=""
             />
             <div className="-ml-8 md:-ml-10">
@@ -50,12 +50,16 @@ function Games() {
                 <source src="/desktop/hauntedSpace2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video> */}
-              <LiteYouTubeEmbed
-                id={"LZ45WHLBlkc"}
-                title="YouTube video player"
-                iframeClass={"rounded-2xl overflow-hidden mb-2 md:mb-0 md:h-[250px] 2xl:h-[350px]"}
-              />
-
+              <iframe
+  className="rounded-2xl overflow-hidden mb-2 md:mb-0 md:h-[250px] 2xl:h-[350px]"
+  width="100%"
+  height="250"
+  src="https://www.youtube.com/embed/LZ45WHLBlkc?si=ovZN72J_EAWL0lFu"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
             </div>
             <div className="max-w-56" data-aos="fade-left">
               <p className="mb-7 leading-tight text-slate-200">
@@ -116,7 +120,7 @@ function Games() {
             </div>
             <img
               className="w-32 h-12 md:w-40 md:h-16  rotate-90 -mr-[70px] md:mr-0 md:-ml-20 sm:ml-0"
-              src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+              src="/desktop/Lens_Flare_purple_PNG.png"
               alt=""
             />
           </div>
@@ -139,7 +143,7 @@ function Games() {
             <div data-aos="fade-left" className='2xl:w-[45%]'>
               <img
                 className="rounded-xl overflow-hidden mb-2 md:mb-0 w-full"
-                src="https://cdn.hauntedspace.io/galaxy-games/screen_Video_MultiPlayer.webp"
+                src="/desktop/screen_Video_MultiPlayer.PNG"
                 alt=""
               />
             </div>
@@ -159,7 +163,7 @@ function Games() {
           >
             <img
               className="w-32 h-12 md:w-40 md:h-16 rotate-90 -ml-16 sm:ml-0"
-              src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+              src="/desktop/Lens_Flare_purple_PNG.png"
               alt=""
             />
             <div className="-ml-10">
@@ -216,7 +220,7 @@ function Games() {
                 loop
                 playsInline
               >
-                <source src="https://cdn.hauntedspace.io/galaxy-games/minigame.webm" type="video/webm" />
+                <source src="/desktop/minigame.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             </div>

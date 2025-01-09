@@ -13,7 +13,7 @@ function GalaxyGames() {
         <div data-aos="fade-up">
           <img
             className="w-40 h-16 bg-cover mb-10 mx-auto"
-            src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+            src="/desktop/Lens_Flare_purple_PNG.png"
             alt=""
           />
           <div>
@@ -40,7 +40,7 @@ function GalaxyGames() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="https://cdn.hauntedspace.io/galaxy-games/left.webm" type="video/webm" />
+              <source src="/desktop/left.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-b  from-[#c65445]/30 to-transparent"></div>
@@ -73,7 +73,7 @@ function GalaxyGames() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             >
-              <source src="https://cdn.hauntedspace.io/galaxy-games/mid.webm" type="video/webm" />
+              <source src="/desktop/mid.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-b  from-[#4868a5]/30 to-transparent pointer-events-none"></div>
@@ -104,7 +104,7 @@ function GalaxyGames() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="https://cdn.hauntedspace.io/galaxy-games/right.webm" type="video/webm" />
+              <source src="/desktop/right.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-b  from-[#6859df]/30 to-transparent"></div>

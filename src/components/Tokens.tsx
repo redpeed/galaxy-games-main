@@ -15,7 +15,7 @@ function Tokens() {
         >
           <img
             className="w-40 h-16 bg-cover mb-10"
-            src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+            src="/desktop/Lens_Flare_purple_PNG.png"
             alt=""
           />
           <div className="text-center uppercase -mt-14 mb-16 space-y-2">
@@ -30,7 +30,7 @@ function Tokens() {
           data-aos="fade-up"
         >
           <img
-            src="https://cdn.hauntedspace.io/galaxy-games/TOKEN_v3_PNG.webp"
+            src="/desktop/TOKEN_v3_PNG.png"
             alt=""
             className="w-32 md:hidden inline-block mb-10 md:mb-0 "
           />
@@ -46,7 +46,7 @@ function Tokens() {
               <div
                 className="flex items-center justify-center flex-[0.3] h-20 -ml-7 rotate-180"
                 style={{
-                  backgroundImage: `url('https://cdn.hauntedspace.io/galaxy-games/planetsToken.webp')`,
+                  backgroundImage: `url('/desktop/planetsToken.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -63,7 +63,7 @@ function Tokens() {
               <div
                 className="flex items-center justify-center flex-[0.3] h-20 -mr-7 rotate-180"
                 style={{
-                  backgroundImage: `url('https://cdn.hauntedspace.io/galaxy-games/planetsToken.webp')`,
+                  backgroundImage: `url('/desktop/planetsToken.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -95,7 +95,7 @@ function Tokens() {
               <div
                 className="flex items-center justify-center flex-[0.3] h-20 -ml-7 rotate-180"
                 style={{
-                  backgroundImage: `url('https://cdn.hauntedspace.io/galaxy-games/planetsToken.webp')`,
+                  backgroundImage: `url('/desktop/planetsToken.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -109,7 +109,7 @@ function Tokens() {
             </div>
             <div className="relative">
               <img
-                src="https://cdn.hauntedspace.io/galaxy-games/TOKEN_v3_PNG.webp"
+                src="/desktop/TOKEN_v3_PNG.png"
                 alt=""
                 className="w-32 hidden md:inline-block rounded-full image-container"
               />
@@ -120,7 +120,7 @@ function Tokens() {
               <div
                 className="flex items-center justify-center flex-[0.3] h-20 -mr-7 rotate-180"
                 style={{
-                  backgroundImage: `url('https://cdn.hauntedspace.io/galaxy-games/planetsToken.webp')`,
+                  backgroundImage: `url('/desktop/planetsToken.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -151,7 +151,7 @@ function Tokens() {
               <div
                 className="flex items-center justify-center flex-[0.3] h-20 -ml-7 rotate-180"
                 style={{
-                  backgroundImage: `url('https://cdn.hauntedspace.io/galaxy-games/planetsToken.webp')`,
+                  backgroundImage: `url('/desktop/planetsToken.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -168,7 +168,7 @@ function Tokens() {
               <div
                 className="flex items-center justify-center flex-[0.3] h-20 -mr-7 rotate-180"
                 style={{
-                  backgroundImage: `url('https://cdn.hauntedspace.io/galaxy-games/planetsToken.webp')`,
+                  backgroundImage: `url('/desktop/planetsToken.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}

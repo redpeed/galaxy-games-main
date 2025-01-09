@@ -21,7 +21,7 @@ function Partners() {
       >
         <img
           className="w-40 h-16 bg-cover md:mb-10"
-          src="https://cdn.hauntedspace.io/galaxy-games/Lens_Flare_purple_PNG.webp"
+          src="/desktop/Lens_Flare_purple_PNG.png"
           alt=""
         />
         <h1 className="text-4xl uppercase text-white md:-mt-14 md:mb-16">
