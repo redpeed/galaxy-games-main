@@ -7,7 +7,9 @@ function Games() {
   return (
     <div id="games">
       {/* GAME ONE */}
-      <div className="2xl:min-h-[70vh] 2xl:pt-52 bg-game-one bg-cover bg-center relative z-10 bg-primary py-20 text-white px-0 md:px-2">
+      <div className="2xl:min-h-[70vh] 2xl:pt-52 bg-game-one bg-cover bg-center relative z-10 bg-primary pt-[100px] pb-20 text-white px-0 md:px-2">
+        <h1 className={"bg-transparent w-full text-white text-center absolute top-5 text-[30px] z-50"}>Galaxy Games: Explore Immersive Gaming Universes</h1>
+
         <div className="absolute top-0 left-0 right-0 h-16 2xl:h-44 bg-gradient-to-b from-[#060c2487] to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-16 2xl:h-44 bg-gradient-to-t from-[#060c2487] to-transparent"></div>
         <div className="absolute inset-0 bg-primary/60"></div>
