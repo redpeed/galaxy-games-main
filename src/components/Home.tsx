@@ -13,7 +13,7 @@ function Home() {
         loop
         playsInline
       >
-        <source src="/desktop/homepage.webm" type="video/webm" />
+        <source src="https://cdn.hauntedspace.io/galaxy-games/homepage.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
