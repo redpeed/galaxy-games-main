@@ -220,7 +220,7 @@ function Games() {
                 loop
                 playsInline
               >
-                <source src="/desktop/minigame.webm" type="video/webm" />
+                <source src="https://cdn.hauntedspace.io/galaxy-games/minigame.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             </div>

@@ -40,7 +40,7 @@ function GalaxyGames() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/desktop/left.webm" type="video/webm" />
+              <source src="https://cdn.hauntedspace.io/galaxy-games/left.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-b  from-[#c65445]/30 to-transparent"></div>
@@ -73,7 +73,7 @@ function GalaxyGames() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             >
-              <source src="/desktop/mid.webm" type="video/webm" />
+              <source src="https://cdn.hauntedspace.io/galaxy-games/mid.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-b  from-[#4868a5]/30 to-transparent pointer-events-none"></div>
@@ -104,7 +104,7 @@ function GalaxyGames() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/desktop/right.webm" type="video/webm" />
+              <source src="https://cdn.hauntedspace.io/galaxy-games/right.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-b  from-[#6859df]/30 to-transparent"></div>
