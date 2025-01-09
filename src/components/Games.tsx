@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaPlaystation, FaSteam, FaXbox } from 'react-icons/fa';
 import { FaTelegram } from 'react-icons/fa6';
-import { SiEpicgames } from 'react-icons/si';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 function Games() {
   return (
@@ -50,16 +50,12 @@ function Games() {
                 <source src="/desktop/hauntedSpace2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video> */}
-              <iframe
-  className="rounded-2xl overflow-hidden mb-2 md:mb-0 md:h-[250px] 2xl:h-[350px]"
-  width="100%"
-  height="250"
-  src="https://www.youtube.com/embed/LZ45WHLBlkc?si=ovZN72J_EAWL0lFu"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-></iframe>
+              <LiteYouTubeEmbed
+                id={"LZ45WHLBlkc"}
+                title="YouTube video player"
+                iframeClass={"rounded-2xl overflow-hidden mb-2 md:mb-0 md:h-[250px] 2xl:h-[350px]"}
+              />
+
             </div>
             <div className="max-w-56" data-aos="fade-left">
               <p className="mb-7 leading-tight text-slate-200">
