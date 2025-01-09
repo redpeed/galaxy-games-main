@@ -9,11 +9,11 @@ export default {
       backgroundImage: {
         hero: "url('/desktop/generic clips_BG_Static.jpg')",
         web3: "url('/desktop/space1.png')",
-        'game-one': "url('/desktop/space4.1_PNG.png')",
-        'game-two': "url('/desktop/multiplayer_BG_PNG.png')",
-        'game-three': "url('/desktop/arcade_PNG.png')",
-        'galaxy-games': "url('/desktop/space3_website_PNG.png')",
-        roadmap: "url('/desktop/striscia_Roadmap.png')",
+        'game-one': "url('/desktop/optimized/space4.1_PNG.png')",
+        'game-two': "url('/desktop/optimized/multiplayer_BG_PNG.png')",
+        'game-three': "url('/desktop/optimized/arcade_PNG.png')",
+        'galaxy-games': "url('/desktop/optimized/space3_website_PNG.png')",
+        roadmap: "url('/desktop/optimized/striscia_Roadmap.png')",
       },
       backgroundColor: {
         primary: '#01001e',

@@ -1,14 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import logoOne from '../../public/desktop/logo-one.svg';
-import logoTwo from '../../public/desktop/logo-two.svg';
-
 function Home() {
-  const { hash } = useLocation();
-  const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-   }, [toggle]);
 
   return (
     <div
